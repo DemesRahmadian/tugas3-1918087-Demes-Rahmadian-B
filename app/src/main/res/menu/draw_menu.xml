@@ -4,14 +4,14 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_berkas"
-            android:icon="@drawable/ic_berkas"
-            android:title="Berkas"/>
-        <item android:id="@+id/nav_kontak"
-            android:icon="@drawable/ic_kontak"
-            android:title="Kontak"/>
-        <item android:id="@+id/nav_musik"
-            android:icon="@drawable/ic_musik"
-            android:title="Musik"/>
+        <item android:id="@+id/nav_makanan"
+            android:icon="@drawable/ic_makanan"
+            android:title="MAKANAN"/>
+        <item android:id="@+id/nav_minuman"
+            android:icon="@drawable/ic_minuman"
+            android:title="MINUMAN"/>
+        <item android:id="@+id/nav_bunga"
+            android:icon="@drawable/ic_bunga"
+            android:title="BUNGA"/>
     </group>
 </menu>

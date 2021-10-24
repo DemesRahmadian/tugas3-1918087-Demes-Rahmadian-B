@@ -1,4 +1,4 @@
-package com.example.tugas3;
+package com.example.tugas3NavBar;
 
 import org.junit.Test;
 

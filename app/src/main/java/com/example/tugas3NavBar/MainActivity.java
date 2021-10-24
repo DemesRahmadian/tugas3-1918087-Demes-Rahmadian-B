@@ -1,4 +1,4 @@
-package com.example.tugas3;
+package com.example.tugas3NavBar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,10 +10,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.example.tugas3.BerkasFragment;
-import com.example.tugas3.KontakFragment;
-import com.example.tugas3.R;
-import com.example.tugas3.MusikFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,22 +35,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //membuat default navigation menu select
         if(savedInstanceState == null){
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BerkasFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_berkas);}
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MakananFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_makanan);}
     }
     //drawer menu fragment handler
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.nav_berkas:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BerkasFragment()).commit();
+            case R.id.nav_makanan:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MakananFragment()).commit();
                 break;
-            case R.id.nav_kontak:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new KontakFragment()).commit();
+            case R.id.nav_minuman:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MinumanFragment()).commit();
                 break;
-            case R.id.nav_musik:
+            case R.id.nav_bunga:
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MusikFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BungaFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

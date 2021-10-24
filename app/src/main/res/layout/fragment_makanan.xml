@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B">
+    android:background="#D43FED">
 
     <TextView
         android:id="@+id/textView"
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:fontFamily="sans-serif-condensed"
-        android:text="Musik"
+        android:text="Makanan"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -27,5 +28,6 @@
         android:layout_marginTop="-129dp"
         android:layout_marginEnd="-37dp"
         android:layout_marginBottom="34dp"
-        app:srcCompat="@drawable/ic_musik" />
+        app:srcCompat="@drawable/ic_makanan" />
+
 </RelativeLayout>
